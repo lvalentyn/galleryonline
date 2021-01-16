@@ -1,0 +1,21 @@
+.btns {
+    &_soc {
+        font-size: 3rem;
+        margin: 5rem 0 3rem;
+        a {
+            margin: 0 .5rem;
+        }
+    }
+    &_header {
+        display: inline-block;
+        padding: 1.4rem 0rem;
+        width: 15rem;
+        margin: 0 .5rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+        border: 1px solid #714d69;
+        text-align: center;
+        border-radius: .6rem;
+        transition: .2s linear;
+    }
+}
