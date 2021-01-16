@@ -248,7 +248,6 @@ a {
         height: 100%;
         top: 0;
         left: 0;
-        background: url(../img/pic1.jpg) center center/cover no-repeat;
         opacity: 1; }
       .gallery__item_photo .img2 {
         position: absolute;
@@ -256,8 +255,47 @@ a {
         height: 100%;
         top: 0;
         left: 0;
-        background: url(../img/pic1_1.jpg) center center/cover no-repeat;
         opacity: 0; }
+      .gallery__item_photo .pic1 {
+        background: url(../img/pic1.jpg) center center/cover no-repeat; }
+      .gallery__item_photo .pic1_1 {
+        background: url(../img/pic1_1.jpg) center center/cover no-repeat; }
+      .gallery__item_photo .pic2 {
+        background: url(../img/pic2.jpg) center center/cover no-repeat; }
+      .gallery__item_photo .pic2_2 {
+        background: url(../img/pic2_2.jpg) center center/cover no-repeat; }
+      .gallery__item_photo .pic3 {
+        background: url(../img/pic3.jpg) center center/cover no-repeat; }
+      .gallery__item_photo .pic3_3 {
+        background: url(../img/pic3_3.jpg) center center/cover no-repeat; }
+      .gallery__item_photo .pic4 {
+        background: url(../img/pic4.jpg) center center/cover no-repeat; }
+      .gallery__item_photo .pic4_4 {
+        background: url(../img/pic4_4.jpg) center center/cover no-repeat; }
+      .gallery__item_photo .pic5 {
+        background: url(../img/pic5.jpg) center center/cover no-repeat; }
+      .gallery__item_photo .pic5_5 {
+        background: url(../img/pic5_5.jpg) center center/cover no-repeat; }
+      .gallery__item_photo .pic6 {
+        background: url(../img/pic6.jpg) center center/cover no-repeat; }
+      .gallery__item_photo .pic6_6 {
+        background: url(../img/pic6_6.jpg) center center/cover no-repeat; }
+      .gallery__item_photo .pic7 {
+        background: url(../img/pic7.jpg) center center/cover no-repeat; }
+      .gallery__item_photo .pic7_7 {
+        background: url(../img/pic7_7.jpg) center center/cover no-repeat; }
+      .gallery__item_photo .pic8 {
+        background: url(../img/pic8.jpg) center center/cover no-repeat; }
+      .gallery__item_photo .pic8_8 {
+        background: url(../img/pic8_8.jpg) center center/cover no-repeat; }
+      .gallery__item_photo .pic9 {
+        background: url(../img/pic9.jpg) center center/cover no-repeat; }
+      .gallery__item_photo .pic9_9 {
+        background: url(../img/pic9_9.jpg) center center/cover no-repeat; }
+      .gallery__item_photo .pic10 {
+        background: url(../img/pic10.jpg) center center/cover no-repeat; }
+      .gallery__item_photo .pic10_10 {
+        background: url(../img/pic10_10.jpg) center center/cover no-repeat; }
     .gallery__item_info {
       padding: 0 2rem;
       height: 30%;
@@ -292,10 +330,49 @@ a {
       -o-transition: all .4s ease-in-out;
       transition: all .4s ease-in-out; }
 
-.btns_soc {
+.contacts {
+  padding: 5rem 0;
+  background-color: #d3b3b8; }
+  .contacts__title {
+    font-size: 5rem;
+    text-align: center; }
+  .contacts__line {
+    width: 80%;
+    height: 2px;
+    margin: 2rem auto 4rem;
+    background-color: #714d69; }
+  .contacts__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .contacts__info {
+    width: 40%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .contacts__img {
+    width: 60%;
+    height: 500px; }
+    .contacts__img img {
+      width: 100%;
+      height: 100%; }
+
+.footer {
+  padding: 2rem 0; }
+  .footer .container {
+    text-align: center; }
+
+.btns_socheader {
   font-size: 3rem;
   margin: 5rem 0 3rem; }
-  .btns_soc a {
+  .btns_socheader a {
     margin: 0 .5rem; }
 
 .btns_header {
@@ -311,3 +388,9 @@ a {
   -webkit-transition: .2s linear;
   -o-transition: .2s linear;
   transition: .2s linear; }
+
+.btns_soccontacts {
+  font-size: 3rem;
+  margin: 1rem 0 1rem; }
+  .btns_soccontacts a {
+    margin: 0 .5rem; }
