@@ -18,11 +18,12 @@ html {
     color: #714d69;
     background: linear-gradient(-45deg, #e7a9b1,#c16f78,#e7a9b1,#c16f78);
     background-size:  400% 400%;
-    animation: bgchange 10s ease-in-out infinite;
+    animation: bgchange 7s ease-in-out infinite;
 }
 .container {
     max-width: 130rem;
     margin: 0 auto;
+    z-index: 3;
 }
 
 a {
