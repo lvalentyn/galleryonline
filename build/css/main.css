@@ -248,7 +248,7 @@ a {
         height: 100%;
         top: 0;
         left: 0;
-        background: url(../../img/pic1.jpg) center center/cover no-repeat;
+        background: url(../img/pic1.jpg) center center/cover no-repeat;
         opacity: 1; }
       .gallery__item_photo .img2 {
         position: absolute;
@@ -256,7 +256,7 @@ a {
         height: 100%;
         top: 0;
         left: 0;
-        background: url(../../img/pic1_1.jpg) center center/cover no-repeat;
+        background: url(../img/pic1_1.jpg) center center/cover no-repeat;
         opacity: 0; }
     .gallery__item_info {
       padding: 0 2rem;
