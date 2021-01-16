@@ -321,7 +321,7 @@ a {
     height: 100%;
     top: 0;
     left: 0;
-    background: url(../../img/bgabout.jpg) center center/cover no-repeat;
+    background: url(../img/bgabout.jpg) center center/cover no-repeat;
     opacity: .15;
     z-index: -1; }
   .about__title {
@@ -371,7 +371,7 @@ a {
     height: 100%;
     top: 0;
     left: 0;
-    background: url(../../img/bggallery.jpg) center center/cover no-repeat;
+    background: url(../img/bggallery.jpg) center center/cover no-repeat;
     opacity: .15;
     z-index: -1; }
   .gallery__title {
@@ -521,7 +521,7 @@ a {
     height: 100%;
     top: 0;
     left: 0;
-    background: url(../../img/bgcontacts.jpg) center center/cover no-repeat;
+    background: url(../img/bgcontacts.jpg) center center/cover no-repeat;
     opacity: .15;
     z-index: -1; }
   .contacts__title {
