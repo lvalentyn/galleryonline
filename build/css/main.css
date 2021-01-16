@@ -100,7 +100,7 @@ a {
   width: 100%;
   padding: 3rem 0;
   top: 0;
-  z-index: 9999;
+  z-index: 9;
   -webkit-transition: .3s linear;
   -o-transition: .3s linear;
   transition: .3s linear; }
@@ -130,11 +130,11 @@ a {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    font-size: 3rem;
+    font-size: 4rem;
     width: 4.4rem;
     height: 3.2rem; }
   .navbar__item {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
     margin-left: 3rem;
     -webkit-transition: .2s linear;

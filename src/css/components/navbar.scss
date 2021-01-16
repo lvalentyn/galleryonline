@@ -4,7 +4,7 @@
     width: 100%;
     padding: 3rem 0;
     top: 0;
-    z-index: 9999;
+    z-index: 9;
     transition: .3s linear;
     .container {
         display: flex;
@@ -15,12 +15,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 3rem;
+        font-size: 4rem;
         width: 4.4rem;
         height: 3.2rem;
     }
     &__item {
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-weight: 600;
         margin-left: 3rem;
         transition: .2s linear;
