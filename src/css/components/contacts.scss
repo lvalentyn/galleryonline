@@ -37,8 +37,10 @@
         font-size: 3rem;
         font-weight: 800;
         margin-bottom: 10px;
-        &:nth-child(3) {
-            align-items: center;
+        transition: .4s linear;
+        &:hover {
+            transition: .4s linear;
+            color: #ffd0e6;
         }
     }
     &__img {

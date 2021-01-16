@@ -1,28 +1,45 @@
 .btns {
     &_socheader {
         font-size: 3rem;
-        margin: 5rem 0 3rem;
+        margin: 6rem 0 5rem;
         a {
             margin: 0 .5rem;
+            transition: .4s linear;
+            &:hover {
+                color: #ffd0e6;
+                transition: .4s linear;
+            }
         }
     }
     &_header {
         display: inline-block;
         padding: 1.4rem 0rem;
-        width: 15rem;
+        width: 20rem;
         margin: 0 .5rem;
-        font-size: 1.5rem;
-        font-weight: 500;
+        font-size: 1.8rem;
+        font-weight: 400;
         border: 1px solid #714d69;
         text-align: center;
         border-radius: .6rem;
-        transition: .2s linear;
+        transition: .4s linear;
+        &:hover {
+            background-color: #714d69;
+            color: #ffd0e6;
+            border: 1px solid #ffd0e6;
+            transition: .4s linear;
+        }
     }
     &_soccontacts {
         font-size: 3rem;
         margin: 1rem 0 1rem;
         a {
+            transition: .4s linear;
             margin: 0 .5rem;
+            &:hover {
+                color: #ffd0e6;
+                transition: .4s linear;
+            }
         }
+       
     }
 }
