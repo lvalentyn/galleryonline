@@ -356,17 +356,35 @@ a {
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .contacts__item {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 10px; }
+    .contacts__item:nth-child(3) {
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
   .contacts__img {
     width: 60%;
-    height: 500px; }
+    height: 300px; }
     .contacts__img img {
       width: 100%;
       height: 100%; }
+  .contacts p {
+    font-size: 2.2rem;
+    font-style: italic;
+    margin: 1rem 0; }
 
 .footer {
   padding: 2rem 0; }
   .footer .container {
+    font-style: italic;
     text-align: center; }
 
 .btns_socheader {
