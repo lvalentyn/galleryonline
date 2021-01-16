@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Circe Bold';
   font-weight: normal;
@@ -59,6 +60,91 @@ table {
     background-position: 100% 50%; }
   100% {
     background-position: 0 50%; } }
+
+/* Animations */
+/* class="header__subtitle aud _anim-items _anim-off" */
+/* ._anim-items  Для подключения анимации. класс (active) */
+/* ._anim-off Для отключения повторной анимации*/
+/*adu = a - animation, from d(down), to u(up)  */
+/* animation если нужно отключить анимацию на девайсе
+    @media (max-width: 575px) {
+        ._anim-items {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        }
+    }*/
+.abt {
+  -webkit-transform: translate(0px, 120%);
+      -ms-transform: translate(0px, 120%);
+          transform: translate(0px, 120%);
+  opacity: 0;
+  -webkit-transition: all 1s ease 0s;
+  -o-transition: all 1s ease 0s;
+  transition: all 1s ease 0s; }
+
+.abt._active {
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1; }
+
+.atb {
+  -webkit-transform: translate(0px, -120%);
+      -ms-transform: translate(0px, -120%);
+          transform: translate(0px, -120%);
+  opacity: 0;
+  -webkit-transition: all 1s ease 0s;
+  -o-transition: all 1s ease 0s;
+  transition: all 1s ease 0s; }
+
+.atb._active {
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1; }
+
+.alr {
+  -webkit-transform: translate(-120%, 0px);
+      -ms-transform: translate(-120%, 0px);
+          transform: translate(-120%, 0px);
+  opacity: 0;
+  -webkit-transition: all 1s ease 0s;
+  -o-transition: all 1s ease 0s;
+  transition: all 1s ease 0s; }
+
+.alr._active {
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1; }
+
+.arl {
+  -webkit-transform: translate(120%, 0px);
+      -ms-transform: translate(120%, 0px);
+          transform: translate(120%, 0px);
+  opacity: 0;
+  -webkit-transition: all 1s ease 0s;
+  -o-transition: all 1s ease 0s;
+  transition: all 1s ease 0s; }
+
+.arl._active {
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1; }
+
+.ascale {
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 1s ease 0s;
+  -o-transition: all 1s ease 0s;
+  transition: all 1s ease 0s; }
+
+.ascale._active {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1); }
 
 html {
   font-size: 10px;
@@ -546,3 +632,22 @@ a {
       -webkit-transition: .4s linear;
       -o-transition: .4s linear;
       transition: .4s linear; }
+
+.gotop {
+  position: fixed;
+  font-size: 2rem;
+  z-index: 999;
+  bottom: 4rem;
+  right: 4rem;
+  width: 4rem;
+  height: 4rem;
+  background: -o-linear-gradient(135deg, #e7a9b1, #c16f78, #e7a9b1, #c16f78);
+  background: linear-gradient(-45deg, #e7a9b1, #c16f78, #e7a9b1, #c16f78);
+  background-size: 400% 400%;
+  -webkit-animation: bgchange 7s ease-in-out infinite;
+          animation: bgchange 7s ease-in-out infinite;
+  border: 1px solid #714d69;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #714d69;
+  outline: none; }

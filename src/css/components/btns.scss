@@ -43,3 +43,20 @@
        
     }
 }
+.gotop {
+    position: fixed;
+    font-size: 2rem;
+    z-index: 999;
+    bottom: 4rem;
+    right: 4rem;
+    width: 4rem;
+    height: 4rem;
+    background: linear-gradient(-45deg, #e7a9b1,#c16f78,#e7a9b1,#c16f78);
+    background-size:  400% 400%;
+    animation: bgchange 7s ease-in-out infinite;
+    border: 1px solid #714d69;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #714d69;
+    outline: none;
+}
