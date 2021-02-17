@@ -1,0 +1,21 @@
+.burger {
+    display: none;
+    cursor: pointer;
+    z-index: 120;
+}
+.burger div{
+    width: 36px;
+    height: 4px;
+    background-color: #714d69;
+    margin: 5px;
+    transition: all .3s ease-in;
+}
+.close .line1 {
+    transform: rotate(-45deg) translate(-7px,6px);
+}
+.close .line2 {
+    opacity: 0;
+}
+.close .line3 {
+    transform: rotate(45deg) translate(-7px,-6px);
+}

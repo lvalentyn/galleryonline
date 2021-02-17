@@ -2,12 +2,13 @@
 @import "components/resetcss";
 @import "components/animations";
 @import "components/variables";
-
+@import "components/media";
 html {
     font-size: 10px;
-    scroll-behavior: smooth;
 }
-
+* {
+    box-sizing: border-box;
+}
 .page {
     width: 100%;
     position: absolute;
@@ -26,12 +27,10 @@ html {
     margin: 0 auto;
     z-index: 3;
 }
-
 a {
     text-decoration: none;
     color: #714d69;
 }
-
 @import "components/navbar";
 @import "components/header";
 @import "components/about";
@@ -39,6 +38,7 @@ a {
 @import "components/contacts";
 @import "components/footer";
 @import "components/btns";
+@import "components/burgermenu";
 
 
 

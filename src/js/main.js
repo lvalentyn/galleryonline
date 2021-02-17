@@ -1,28 +1,8 @@
-window.addEventListener('DOMContentLoaded', () => {
-
-    /* burgermenu */
-    // const menu = document.querySelector('.navbar__menu'),
-    //     menuItems = document.querySelectorAll('.navbar__item'),
-    //     hamburger = document.querySelector('.navbar__burger');
-
-    // hamburger.addEventListener('click', () => {
-    //     hamburger.classList.toggle('active')
-    //     menu.classList.toggle('active')
-    // });
-    // menuItems.forEach(link => {
-    //     link.addEventListener('click', () => {
-    //         hamburger.classList.toggle('active')
-    //         menu.classList.toggle('active')
-    //     })
-    // });
+$(document).ready(function () {
     // Animations
-
     const animItems = document.querySelectorAll('._anim-items');
-
     if (animItems.length > 0) {
-
         window.addEventListener('scroll', animOnScroll);
-
         function animOnScroll() {
             for (let index = 0; index < animItems.length; index++) {
                 const animItem = animItems[index];
@@ -45,7 +25,6 @@ window.addEventListener('DOMContentLoaded', () => {
                 }
             }
         }
-
         function offset(el) {
             const rect = el.getBoundingClientRect(),
                 scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
@@ -55,53 +34,52 @@ window.addEventListener('DOMContentLoaded', () => {
                 left: rect.left + scrollLeft
             }
         }
-
         setTimeout(() => {
             animOnScroll();
         }, 300);
 
     }
-    /* Jquery */
-    $(document).ready(function () {
-        // navmenu on scroll
-        $(window).scroll(function () {
-            if (this.scrollY > 40) {
-                $('.navbar').addClass('sticky');
-                $('.gotop').fadeIn();
-            } else {
-                $('.navbar').removeClass('sticky');
-                $('.gotop').fadeOut();
-            }
-
-        });
-
-        // modal
-        // $('.modal__close').on('click', function () {
-        //     $('.overlay, #thanks').fadeOut('slow');
-        // });
-
-        // gotop
-
-        $('.gotop').click(function () {
-            scroll(0, 0)
-        });
-
-        // mailer
-        // $('form').submit(function (e) {
-        //     e.preventDefault();/* отключаем перезагрузку страницы */
-        //     $.ajax({
-        //         type: "POST",
-        //         url: "mailer/smart.php",
-        //         data: $(this).serialize()
-        //     }).done(function () {
-        //         $(this).find("input").val("");
-        //         $('.overlay, #thanks').fadeIn('slow');
-        //         $('form').trigger('reset');
-        //     });
-        //     return false;
-        // });
-
+    /* burgermenu */
+    $('.burger').click(function () {
+        $('.navbar__menu').toggleClass('nav-active');
+        $('.burger').toggleClass('close');
     });
-
-
+    $('.navbar__item').click(function () {
+        $('.navbar__menu').removeClass('nav-active');
+        $('.burger').removeClass('close');
+    });
+    // lightgallery
+    lightGallery(document.querySelector('.lg1'));
+    lightGallery(document.querySelector('.lg2'));
+    lightGallery(document.querySelector('.lg3'));
+    lightGallery(document.querySelector('.lg4'));
+    lightGallery(document.querySelector('.lg5'));
+    lightGallery(document.querySelector('.lg6'));
+    lightGallery(document.querySelector('.lg7'));
+    lightGallery(document.querySelector('.lg8'));
+    lightGallery(document.querySelector('.lg9'));
+    lightGallery(document.querySelector('.lg10'));
+    lightGallery(document.querySelector('.lg11'));
+    lightGallery(document.querySelector('.lg12'));
+    lightGallery(document.querySelector('.lg13'));
+    // navmenu on scroll
+    $(window).scroll(function () {
+        if (this.scrollY > 40) {
+            $('.navbar').addClass('sticky');
+            $('.gotop').fadeIn();
+        } else {
+            $('.navbar').removeClass('sticky');
+            $('.gotop').fadeOut();
+        }
+    });
+    // gotop
+    $('.gotop').click(function () {
+        scroll(0, 0)
+    });
+    // плавная прокрутка
+    $("a[href]").click(function () {
+        const _href = $(this).attr("href");
+        $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+        return false;
+    });
 });
