@@ -346,6 +346,23 @@ table {
         font-size: 1.6rem; }
       .page .gallery__item_price {
         font-size: 1.8rem; }
+  .page .lessons {
+    padding: 3rem 0; }
+    .page .lessons__title {
+      font-size: 3rem; }
+    .page .lessons__line {
+      margin: 2rem auto 3rem; }
+    .page .lessons__descr {
+      margin-top: 15px;
+      font-size: 1.8rem; }
+    .page .lessons__photos {
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+    .page .lessons__photo {
+      width: 30%;
+      height: auto; }
   .page .contacts {
     padding: 3rem 0; }
     .page .contacts__title {
@@ -387,7 +404,12 @@ table {
     .page .gallery__item_info {
       height: 60%; }
     .page .gallery__item_price {
-      text-align: center; } }
+      text-align: center; }
+  .page .contacts__item a {
+    font-size: 2rem; }
+  .page .gotop {
+    bottom: 20px;
+    right: 20px; } }
 
 @media (max-width: 380px) {
   .page .container {
@@ -561,6 +583,8 @@ a {
     height: 100%;
     text-align: center; }
   .header__title {
+    text-shadow: 0 0 5px #eeecf3, 0 0 5px #e3dae7;
+    font-weight: 800;
     font-size: 8rem; }
 
 .about {
@@ -730,6 +754,58 @@ a {
       font-size: 2rem;
       text-align: right; }
 
+.lessons {
+  padding: 5rem 0;
+  position: relative;
+  z-index: 1; }
+  .lessons::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(../img/bgmain.jpg) center center/cover no-repeat;
+    opacity: .15;
+    z-index: -1; }
+  .lessons__title {
+    font-size: 5rem;
+    text-align: center; }
+  .lessons__line {
+    width: 80%;
+    height: 2px;
+    margin: 2rem auto 6rem;
+    background-color: #714d69; }
+  .lessons__wrapper {
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #714d69;
+    background-color: #d3b3b8;
+    overflow: hidden; }
+  .lessons__photos {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -webkit-justify-content: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly; }
+  .lessons__photo {
+    width: 25%;
+    height: auto; }
+    .lessons__photo img {
+      border-radius: 20px;
+      border: 2px solid #714d69;
+      -webkit-box-shadow: 5px 5px 5px #714d69;
+              box-shadow: 5px 5px 5px #714d69;
+      width: 100%;
+      height: 100%; }
+  .lessons__descr {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2.5rem; }
+
 .contacts {
   padding: 5rem 0;
   background-color: #d3b3b8;
@@ -856,10 +932,11 @@ a {
   position: fixed;
   font-size: 2rem;
   z-index: 10;
-  bottom: 4rem;
-  right: 4rem;
-  width: 4rem;
-  height: 4rem;
+  bottom: 40px;
+  right: 40px;
+  width: 40px;
+  max-width: 40px;
+  height: 40px;
   background: -o-linear-gradient(135deg, #e7a9b1, #c16f78, #e7a9b1, #c16f78);
   background: linear-gradient(-45deg, #e7a9b1, #c16f78, #e7a9b1, #c16f78);
   background-size: 400% 400%;

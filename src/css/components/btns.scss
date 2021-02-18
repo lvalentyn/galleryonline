@@ -47,10 +47,11 @@
     position: fixed;
     font-size: 2rem;
     z-index: 10;
-    bottom: 4rem;
-    right: 4rem;
-    width: 4rem;
-    height: 4rem;
+    bottom: 40px;
+    right: 40px;
+    width: 40px;
+    max-width: 40px;
+    height: 40px;
     background: linear-gradient(-45deg, #e7a9b1,#c16f78,#e7a9b1,#c16f78);
     background-size:  400% 400%;
     animation: bgchange 7s ease-in-out infinite;
